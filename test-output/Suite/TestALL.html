@@ -1,0 +1,280 @@
+<html>
+<head>
+<title>TestNG:  TestALL</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestALL</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 05 00:55:59 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>208 seconds (208697 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mystore.testcases.PlaceOrderTest.placeOrder()'><b>placeOrder</b><br>Test class: com.mystore.testcases.PlaceOrderTest<br>Test method: Test Case- 14 Place an order</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:309)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:42)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:83)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
+	at com.mystore.pageobjects.PaymentPage.&lt;init&gt;(PaymentPage.java:35)
+	at com.mystore.pageobjects.CheckOutPage.clickOnPlaceOrderBtn(CheckOutPage.java:37)
+	at com.mystore.testcases.PlaceOrderTest.placeOrder(PlaceOrderTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762570948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace762570948'><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:309)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:42)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:83)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
+	at com.mystore.pageobjects.PaymentPage.&lt;init&gt;(PaymentPage.java:35)
+	at com.mystore.pageobjects.CheckOutPage.clickOnPlaceOrderBtn(CheckOutPage.java:37)
+	at com.mystore.testcases.PlaceOrderTest.placeOrder(PlaceOrderTest.java:91)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>56</td>
+<td>com.mystore.testcases.PlaceOrderTest@544fa968</td></tr>
+<tr>
+<td title='com.mystore.testcases.CartTest.verifyQuantityFromCart()'><b>verifyQuantityFromCart</b><br>Test class: com.mystore.testcases.CartTest<br>Test method: Test Case13- Add a product with 4-quantity and verify it from cart</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.mystore.testcases.CartTest.verifyQuantityFromCart(CartTest.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace459077137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace459077137'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.mystore.testcases.CartTest.verifyQuantityFromCart(CartTest.java:97)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>28</td>
+<td>com.mystore.testcases.CartTest@18bc345</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mystore.testcases.ProductTest.productDetailsValidation()'><b>productDetailsValidation</b><br>Test class: com.mystore.testcases.ProductTest<br>Test method: Test Case 8 - Verify all products and products details</td>
+<td></td>
+<td>6</td>
+<td>com.mystore.testcases.ProductTest@42f8285e</td></tr>
+<tr>
+<td title='com.mystore.testcases.LogOutTest.logout()'><b>logout</b><br>Test class: com.mystore.testcases.LogOutTest<br>Test method: LogOut testCase test case4</td>
+<td></td>
+<td>3</td>
+<td>com.mystore.testcases.LogOutTest@3724af13</td></tr>
+<tr>
+<td title='com.mystore.testcases.SignUpTest.registerUser()'><b>registerUser</b><br>Test class: com.mystore.testcases.SignUpTest<br>Test method:  test case1 create a user and delete account TestCase1</td>
+<td></td>
+<td>10</td>
+<td>com.mystore.testcases.SignUpTest@26bab2f1</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: com.mystore.testcases.LoginTest<br>Test method: Test Case3-Invalid login attempt <br>Parameters: ThisIsNotARegisterMail02@Xyz.com, TestPassword12&8^^%</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.LoginTest@3bd82cf5</td></tr>
+<tr>
+<td title='com.mystore.testcases.TestCaseTest.verifyTestCasePage()'><b>verifyTestCasePage</b><br>Test class: com.mystore.testcases.TestCaseTest<br>Test method: Test case 7 - Test Case Page</td>
+<td></td>
+<td>1</td>
+<td>com.mystore.testcases.TestCaseTest@7817fd62</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginTest.existingEmailSignUp()'><b>existingEmailSignUp</b><br>Test class: com.mystore.testcases.LoginTest<br>Test method: Existing email signup testCase5</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.LoginTest@3bd82cf5</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: com.mystore.testcases.LoginTest<br>Test method: Test Case3-Invalid login attempt <br>Parameters: ThisIsNotARegisterMail04@Xyz.com, TestPassword12&10^^%</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.LoginTest@3bd82cf5</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginTest.Login()'><b>Login</b><br>Test class: com.mystore.testcases.LoginTest<br>Test method: Test Case2 -login into a user account and delete account <br>Parameters: Mohammed145@xyz.com, Test@8901</td>
+<td></td>
+<td>4</td>
+<td>com.mystore.testcases.LoginTest@3bd82cf5</td></tr>
+<tr>
+<td title='com.mystore.testcases.ContactUsTest.contactUsFormSubmit()'><b>contactUsFormSubmit</b><br>Test class: com.mystore.testcases.ContactUsTest<br>Test method: Test Case 6- Contact us subscription</td>
+<td></td>
+<td>4</td>
+<td>com.mystore.testcases.ContactUsTest@44040454</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: com.mystore.testcases.LoginTest<br>Test method: Test Case3-Invalid login attempt <br>Parameters: ThisIsNotARegisterMail01@Xyz.com, TestPassword12&7^^%</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.LoginTest@3bd82cf5</td></tr>
+<tr>
+<td title='com.mystore.testcases.LoginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: com.mystore.testcases.LoginTest<br>Test method: Test Case3-Invalid login attempt <br>Parameters: ThisIsNotARegisterMail03@Xyz.com, TestPassword12&9^^%</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.LoginTest@3bd82cf5</td></tr>
+<tr>
+<td title='com.mystore.testcases.CartTest.subscriptionToMailFromCartPage()'><b>subscriptionToMailFromCartPage</b><br>Test class: com.mystore.testcases.CartTest<br>Test method: test case 11</td>
+<td></td>
+<td>2</td>
+<td>com.mystore.testcases.CartTest@18bc345</td></tr>
+<tr>
+<td title='com.mystore.testcases.HomeTest.homePageSubscription()'><b>homePageSubscription</b><br>Test class: com.mystore.testcases.HomeTest<br>Test method: test case 10</td>
+<td></td>
+<td>0</td>
+<td>com.mystore.testcases.HomeTest@247bddad</td></tr>
+<tr>
+<td title='com.mystore.testcases.SearchTest.searchProduct()'><b>searchProduct</b><br>Test class: com.mystore.testcases.SearchTest<br>Test method: test Case 9- search a product</td>
+<td></td>
+<td>3</td>
+<td>com.mystore.testcases.SearchTest@65fe9e33</td></tr>
+<tr>
+<td title='com.mystore.testcases.CartTest.addProductsToCart()'><b>addProductsToCart</b><br>Test class: com.mystore.testcases.CartTest<br>Test method: Test case- 12 Add product to cart and verify quantity and price</td>
+<td></td>
+<td>6</td>
+<td>com.mystore.testcases.CartTest@18bc345</td></tr>
+</table><p>
+</body>
+</html>
